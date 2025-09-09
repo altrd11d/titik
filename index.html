@@ -3,187 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Titik Isu - Puskadaran</title>
+  <title>Titik !su</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-    body {
-      background: #111;
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
-    }
-
-    /* Navbar */
-    .navbar {
-      background: rgba(255, 255, 255, 0.86);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 0.5rem 1rem;
-    }
-    .highlight {
-      font-size: 3rem;
-      font-family: 'Times New Roman', Times, serif;
-      line-height: 1;
-    }
-
-    /* Hero Section */
-    .hero {
-      min-height: 100vh;
-      background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
-                  url('ASSET/WhatsApp Image 2025-08-23 at 15.22.46.png') center/cover no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 15px;
-    }
-    .hero-content {
-      max-width: 800px;
-      animation: fadeInUp 1.2s ease-in-out;
-    }
-    .hero img {
-      max-width: 100%;
-      height: 300px;
-      margin-bottom: 20px;
-      filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.5));
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin: 15px 0 25px;
-      line-height: 1.6;
-    }
-
-    /* Button Modern */
-    .btn-custom {
-      background: #1976d2;
-      color: #fff;
-      font-weight: bold;
-      padding: 14px 32px;
-      border-radius: 50px;
-      transition: all 0.3s ease;
-      border: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      font-family: 'Times New Roman', Times, serif;
-    }
-    .btn-custom:hover {
-      transform: translateY(-4px) scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.4); 
-      background: #1976d2;
-    }
-
-    /* Card Section */
-    .card-custom {
-      border: none;
-      border-radius: 16px;
-      padding: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(8px);
-      color: white;
-      text-align: center;
-    }
-    .card-custom:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    }
-
-    /* Animasi */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Responsive khusus navbar */
-@media (max-width: 768px) {
-  .navbar .navbar-brand small {
-    display: block; /* otomatis turun */
-    text-align: left;
-  }
-}
-
-  </style>
+  <link href="style.css" rel="stylesheet">
+  <!-- Bootstrap Bundle JS (dengan Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container-fluid px-3 flex-wrap">
-    <!-- Brand -->
-<a class="navbar-brand d-flex align-items-center me-auto flex-wrap" href="#">
-  <span class="highlight me-3">Titik !SU</span>
-  <span class="d-flex flex-column" style="font-size: 17px;">
-    <b class="d-block">Puskadaran</b>
-    <small class="d-none d-md-block">(Pusat Kajian Daerah dan Anggaran)</small>
-    <small class="d-block d-md-none text-wrap">(Pusat Kajian Daerah<br>dan Anggaran)</small>
-  </span>
-</a>
 
+<!-- Navbar -->
+<nav class="navbar p-2 shadow-sm sticky-top">
+  <div class="container d-flex justify-content-between align-items-center">
     
-    <!-- Logo kanan -->
-    <div class="align-items-center flex-wrap mt-2 mt-lg-0">
-      <img src="ASSET/logo2.png" alt="Logo" class="img-fluid me-2" style="height: 60px; margin-right: 30px;">
-      <img src="ASSET/setjen.png" alt="Logo" class="img-fluid" style="height: 60px;">
+    <!-- Kiri: Logo -->
+    <div class="d-flex align-items-center gap-2">
+      <img src="IMG/TITIKISU.jpeg" alt="logo" style="height:60px;">
     </div>
+
+    <!-- Kanan: Teks + Icon -->
+    <div class="d-flex align-items-center text-black">
+      <div class="me-3 text-end">
+        <strong>PUSKADARAN</strong><br>
+        <small>(Pusat Kajian Daerah dan Anggaran)</small>
+      </div>
+      <img src="IMG/logo2.png" alt="icon" class="img-fluid me-2" style="height: 60px;">
+      <img src="IMG/setjen.png" alt="icon" class="img-fluid" style="height: 60px;">
+    </div>
+
   </div>
 </nav>
 
 
 
-<!-- Hero -->
-<section class="hero">
-  <div class="hero-content">
-    <img src="ASSET/WhatsApp Image 2025-08-24 at 13.51.40.png" alt="Logo" class="img-fluid">
-    <p><strong>Titik Isu</strong> merupakan informasi yang disajikan 
-      PUSKADARAN mengenai isu/permasalahan aktual yang berkembang baik 
-      di tingkat daerah maupun nasional. Setiap isu disajikan secara 
-      ringkas dan sistematis, mencakup uraian masalah, faktor penyebab, 
-      serta dampak yang ditimbulkan, sehingga dapat memberikan 
-      pemahaman yang komprehensif bagi publik.</p>
+  <!-- Hero Section -->
+  <section class="hero-section" style="background: url('IMG/BAG1.jpeg') center/cover no-repeat;">
+    <div class="container">
+      <h1 class="md-4">Ada <span>isu</span> apa hari ini ?</h1>
+      <div class="divider"></div><br><br>
+      <p><strong style="color:#e63946;">Titik !su</strong> merupakan informasi yang disediakan PUSKADARAN mengenai 
+        isu/permasalahan aktual yang berkembang baik di tingkat daerah maupun 
+        nasional. Setiap isu ditampilkan secara ringkas dan sistematis, mencakup
+        uraian masalah, faktor penyebab, serta dampak yang ditimbulkan, sehingga 
+        dapat memberikan pemahaman yang komprehensif bagi publik.</p><br><br>   
+<div class="d-flex align-items-center gap-2 mt-3">
+  <a href="#" class="btn btn-custom">Baca Titik Isu</a>    
+  <a href="https://instagram.com" target="_blank" class="d-flex align-items-center">
+    <i class="bi bi-instagram" style="font-size: 50px; margin-left: 30px; color: white;"></i>
+  </a>
+</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Fungsi Section -->
+<section class="fungsi-section text-white py-5" style="background: url('IMG/BAG2.jpeg') center/cover no-repeat;">
+  <div class="container">
     
-    <!-- Button baru -->
-    <a href="https://drive.google.com/drive/folders/1-7cseDtKazdP6dNnZvXG058nPPSh2XYb?fbclid=PAZXh0bgNhZW0CMTEAAaeSMhpr--WsJXaqkkE6BAVWrBG8Q9nzaQ-gE2c425LVStoH37p3l041LFvCTQ_aem_ijXWbMumWfBobXU7XsbRWQ" type="button" class="btn btn-custom mt-3">BACA TITIK ISU</a>
+    <!-- Judul -->
+    <h1 class="text-white" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 38px;">
+      Fungsi <img src="IMG/TITIKISUNOBAG.png" alt="icon" style="height:75px;">
+    </h1><br><br>
+
+    <!-- Card Wrapper -->
+    <div class="row g-4 justify-content-center flex-wrap gap-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="fungsi-card p-4" style="width: 290px; height: 300px;">
+          <h4>Menghimpun & Memetakan Isu Aktual</h4>
+          <p class="mb-0">Menyediakan data isu strategis daerah/nasional yang dilengkapi masalah, penyebab, dan dampak.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3">
+        <div class="fungsi-card p-4" style="width: 290px; height: 300px;">
+          <h4>Menyajikan Informasi yang Mudah Dipahami Publik</h4>
+          <p class="mb-0">Menyampaikan isu secara ringkas dan informatif agar lebih mudah memahami permasalahan yang berkembang.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3">
+        <div class="fungsi-card p-4" style="width: 290px; height: 300px;">
+          <h4>Mendokumentasikan & Mengarsipkan Isu Strategis</h4>
+          <p class="mb-0">Menjadi media penyimpanan informasi yang dapat diakses kembali sebagai rujukan ketika dibutuhkan.</p>
+        </div>
+      </div>
+
+    </div><br><br>
   </div>
 </section>
 
-<!-- Fungsi Section -->
-<section class="py-5" id="fungsi">
+
+<section class="py-5 komite-section" style="background: url('IMG/BAG3.jpeg') center/cover no-repeat;">
   <div class="container">
-    <h2 class="text-center mb-5 fw-bold">Fungsi Titik Isu PUSKADARAN</h2>
-    <div class="row g-4">
-      <div class="col-md-4 col-sm-6">
-        <div class="card card-custom h-100">
-          <h5 class="fw-bold">1. Menghimpun & Memetakan Isu Aktual</h5>
-          <p>Menyediakan data isu strategis daerah/nasional yang dilengkapi masalah, penyebab, dan dampak.</p>
+    <!-- Judul -->
+    <h2 class="komite-title">
+      <span class="text-info fw-bold">Bidang Lingkup</span> 
+      <span class="text-danger fw-bold">KOMITE</span>
+      <i class="bi bi-chevron-down toggle-icon" data-bs-toggle="collapse" data-bs-target="#komiteContent"></i>
+    </h2>
+    <div class="underline"></div>
+
+    <!-- Konten yang bisa expand/collapse -->
+    <div class="collapse mt-5" id="komiteContent">
+      <div class="row justify-content-center g-4">
+      <!-- KOMITE I -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-lg custom-card">
+          <div class="card-body">
+            <h5 class="card-title">KOMITE I</h5>
+            <ul class="list-unstyled text-light small">
+              <li>1. Pemerintahan Daerah</li>
+              <li>2. Hubungan pusat dan daerah serta antar daerah</li>
+              <li>3. Pembentukan, pemekaran dan penggabungan daerah</li>
+              <li>4. Politik, hukum, dan hak asasi manusia</li>
+              <li>5. Aparatur negara</li>
+              <li>6. Wilayah perbatasan negara</li>
+              <li>7. Pertanahan, agraria, dan tata ruang</li>
+              <li>8. Komunikasi dan informatika</li>
+              <li>9. Ketertiban umum dan perlindungan masyarakat</li>
+              <li>10. Pertahanan dan keamanan</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="card card-custom h-100">
-          <h5 class="fw-bold">2. Menyajikan Informasi yang Mudah Dipahami Publik</h5>
-          <p>Menyampaikan isu secara ringkas dan informatif agar publik lebih mudah memahami.</p>
+
+      <!-- KOMITE II -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-lg custom-card">
+          <div class="card-body">
+            <h5 class="card-title">KOMITE II</h5>
+            <ul class="list-unstyled text-light small">
+              <li>1. Pertanian dan perkebunan</li>
+              <li>2. Perhubungan</li>
+              <li>3. Kelautan dan perikanan</li>
+              <li>4. Energi sumber daya mineral</li>
+              <li>5. Kehutanan dan lingkungan hidup</li>
+              <li>6. Ekonomi kerakyatan</li>
+              <li>7. BUMN terkait SDA</li>
+              <li>8. Pekerjaan umum dan perumahan rakyat</li>
+              <li>9. Ketahanan pangan</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="card card-custom h-100">
-          <h5 class="fw-bold">3. Mendokumentasikan & Mengarsipkan Isu Strategis</h5>
-          <p>Menjadi media penyimpanan informasi yang dapat diakses kembali sebagai rujukan.</p>
+
+      <!-- KOMITE III -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-lg custom-card">
+          <div class="card-body">
+            <h5 class="card-title">KOMITE III</h5>
+            <ul class="list-unstyled text-light small">
+              <li>1. Pendidikan</li>
+              <li>2. Agama</li>
+              <li>3. Kebudayaan</li>
+              <li>4. Kesehatan</li>
+              <li>5. Pariwisata</li>
+              <li>6. Pemuda dan Olahraga</li>
+              <li>7. Kesejahteraan Sosial</li>
+              <li>8. Tenaga kerja</li>
+              <li>9. Perpustakaan</li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      <!-- KOMITE IV -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-lg custom-card">
+          <div class="card-body">
+            <h5 class="card-title">KOMITE IV</h5>
+            <ul class="list-unstyled text-light small">
+              <li>1. APBN</li>
+              <li>2. Pajak dan pungutan lain</li>
+              <li>3. Perimbangan keuangan pusat dan daerah</li>
+              <li>4. Lembaga keuangan dan perbankan</li>
+              <li>5. Koperasi, usaha mikro, kecil, menengah</li>
+              <li>6. Statistik</li>
+              <li>7. Perindustrian dan perdagangan</li>
+              <li>8. Investasi dan penanaman modal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- Instagram Button -->
-<div class="text-center">
-  <a href="https://www.instagram.com/puskadarandpdri?utm_source=ig_web_button_share_sheet&igsh=ZnVyd2ZtNWZvbWRp" target="_blank" class="btn btn-danger mb-5">
-    <i class="fab fa-instagram me-2"></i> Info Kontak
-  </a>
-</div>
+
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </body>
 </html>
