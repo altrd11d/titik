@@ -103,12 +103,20 @@
     <h2 class="komite-title">
       <span class="text-info fw-bold">Bidang Lingkup</span> 
       <span class="text-danger fw-bold">KOMITE</span>
-      <i class="bi bi-chevron-down toggle-icon" data-bs-toggle="collapse" data-bs-target="#komiteContent"></i>
+        <button class="btn btn-link p-0 ms-2 toggle-icon" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#komiteContent" 
+          aria-expanded="true" 
+          aria-controls="komiteContent" 
+          style="width: 3rem;">
+    <i class="bi bi-chevron-down"></i>
+  </button>
     </h2>
     <div class="underline"></div>
 
     <!-- Konten yang bisa expand/collapse -->
-    <div class="collapse mt-5" id="komiteContent">
+    <div class="collapse show mt-5" id="komiteContent">
       <div class="row justify-content-center g-4">
       <!-- KOMITE I -->
       <div class="col-md-3 mb-4">
